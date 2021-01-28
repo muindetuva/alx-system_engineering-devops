@@ -7,3 +7,4 @@ Exploring the different type of permissions and how they are used.
 2-groups - Displays all the groups the current user is part of.
 3-new_owner - Changes owner of file hello.
 4-empty - Creates empty file called hello.
+5-execute - Adds execute permission for the owner of hello.
