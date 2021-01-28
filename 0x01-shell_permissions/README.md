@@ -10,4 +10,5 @@ Exploring the different type of permissions and how they are used.
 5-execute - Adds execute permission for the owner of hello.
 6-multiple_permisions - Adds multiple permissions to a file at once"
 7-everybody - Adds execute permission to everybody
+8-james_bonf - script that gives all permissions to other users and none for owner group
 
