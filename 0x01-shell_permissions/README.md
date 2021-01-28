@@ -8,3 +8,5 @@ Exploring the different type of permissions and how they are used.
 3-new_owner - Changes owner of file hello.
 4-empty - Creates empty file called hello.
 5-execute - Adds execute permission for the owner of hello.
+6-multiple_permisions - Adds multiple permissions to a file at once"
+
