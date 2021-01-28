@@ -13,3 +13,4 @@ Exploring the different type of permissions and how they are used.
 8-james_bonf - script that gives all permissions to other users and none for owner group
 9-Johnn_doe - script that makes a file have permisions 753
 10-mirror_permissions - Copies mode of another file to our file
+11-directories_permissions -Changes permissions recursively
