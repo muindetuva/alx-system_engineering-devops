@@ -17,3 +17,5 @@ Exploring the different type of permissions and how they are used.
 12-directory_permissions - Creates a directory with set permissions
 13-change_group - Change the group for a file
 14-change_owner_and_group - Name says it all
+15-symbolic_link_permissions -  Change ownership of symbolic links without affecting referenced files
+
