@@ -11,4 +11,4 @@ Exploring the different type of permissions and how they are used.
 6-multiple_permisions - Adds multiple permissions to a file at once"
 7-everybody - Adds execute permission to everybody
 8-james_bonf - script that gives all permissions to other users and none for owner group
-
+9-Johnn_doe - script that makes a file have permisions 753
