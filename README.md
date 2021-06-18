@@ -31,3 +31,13 @@ Covering how to write and run bash scripts.
 > * Shell local and global variables
 > * Shell expansions
 > * Shell arithmetic
+
+### 0x04-loops-conditions_and_parsing
+> Learning about SSH keys and some more shell scripting concepts
+> Concepts covered:
+> * How to create SSH keys
+> * What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
+> * How to use while, until and for loops
+> * How to use if, else, elif and case condition statements
+> * How to use the cut command
+
