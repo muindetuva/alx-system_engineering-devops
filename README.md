@@ -63,3 +63,10 @@ Covering how to write and run bash scripts.
 > * The Internet
 > * TCP/UDP
 
+### 0x08-networking_basics_2
+> A continuation on networking
+> Concepts covered:
+> * What is localhost/127.0.0.1
+> * What is 0.0.0.0
+> * What is /etc/hosts
+> * How to display your machine’s active network interfaces
