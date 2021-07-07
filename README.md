@@ -50,3 +50,7 @@ Covering how to write and run bash scripts.
 > * How to kill a process
 > * What is a signal
 > * What are the 2 signals that cannot be ignored
+
+### 0x06-regular_expressions
+> Learning about regular expressions
+
