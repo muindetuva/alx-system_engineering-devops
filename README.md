@@ -54,3 +54,12 @@ Covering how to write and run bash scripts.
 ### 0x06-regular_expressions
 > Learning about regular expressions
 
+### 0x07-networking_basics
+> Learn the basics of networking
+> Concepts covered:
+> * OSI model
+> * LAN
+> * WAN
+> * The Internet
+> * TCP/UDP
+
