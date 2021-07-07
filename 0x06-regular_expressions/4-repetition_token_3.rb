@@ -1,2 +1,4 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/hbt{0,4}n/).join
+# Matches a string with hb followed by 0 or more occurences of t
+
+puts ARGV[0].scan(/hbt*n/).join
