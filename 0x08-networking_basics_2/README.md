@@ -9,3 +9,6 @@ Requirements:
 
 ### 1-show_attached_IPs
 A Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+
+### 100-port_listening_on_localhost
+A Bash script that listens on port 98 on localhost.
