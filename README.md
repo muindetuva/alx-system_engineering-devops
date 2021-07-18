@@ -70,3 +70,15 @@ Covering how to write and run bash scripts.
 > * What is 0.0.0.0
 > * What is /etc/hosts
 > * How to display your machine’s active network interfaces
+
+### 0x09-web_infrastructure_design
+> Learning about web infrastructure
+> Concepts covered:
+> * What is a database
+> * What’s the difference between a web server and an app server?
+> * DNS record types
+> * Single point of failure
+> * How to avoid downtime when deploying new code
+> * High availability cluster (active-active/active-passive)
+> * What is HTTPS
+> * What is a firewall
