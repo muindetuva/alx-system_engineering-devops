@@ -86,3 +86,11 @@ Covering how to write and run bash scripts.
 ### 0x0A-configuration_management
 > Learning about configuration management using puppet
 
+### 0x0B-ssh
+> Learning about ssh keys
+> Concepts covered:
+> * What is a server
+> * Where servers usually live
+> * What is SSH
+> * How to create an SSH RSA key pair
+> * How to connect to a remote host using an SSH RSA key pair
