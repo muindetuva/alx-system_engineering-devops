@@ -82,3 +82,7 @@ Covering how to write and run bash scripts.
 > * High availability cluster (active-active/active-passive)
 > * What is HTTPS
 > * What is a firewall
+
+### 0x0A-configuration_management
+> Learning about configuration management using puppet
+
