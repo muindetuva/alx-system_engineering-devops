@@ -102,3 +102,6 @@ Covering how to write and run bash scripts.
 > * What is a child process
 > * Why web servers usually have a parent process and child processes
 > * What are the main HTTP requests
+
+## 0x0D-web_stack_debugging_0
+> Learning about webstack debugging
