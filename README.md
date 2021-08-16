@@ -94,3 +94,11 @@ Covering how to write and run bash scripts.
 > * What is SSH
 > * How to create an SSH RSA key pair
 > * How to connect to a remote host using an SSH RSA key pair
+
+## 0x0C-web_server
+> Learning about web servers
+> Concepts covered:
+> * What is the main role of a web server
+> * What is a child process
+> * Why web servers usually have a parent process and child processes
+> * What are the main HTTP requests
