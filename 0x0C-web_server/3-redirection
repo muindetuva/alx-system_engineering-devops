@@ -5,8 +5,8 @@
 apt-get install -y nginx
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
 
-line1="rewrite ^/redirect_me$ https://www.google.com permanent"
-line2="rewrite ^/redirect_me/$ https://www.google.com permanent"
+line1="rewrite ^/redirect_me$ https://www.google.com permanent;"
+line2="rewrite ^/redirect_me/$ https://www.google.com permanent;"
 
 sed -i "53 a $line1" /etc/nginx/sites-available/default
 sed -i "54 a $line2" /etc/nginx/sites-available/default
