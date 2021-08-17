@@ -11,4 +11,4 @@ line2="rewrite ^/redirect_me/$ https://www.google.com permanent"
 sed -i "53 a $line1" /etc/nginx/sites-available/default
 sed -i "54 a $line2" /etc/nginx/sites-available/default
 
-nginx -s reload
+service nginx start
