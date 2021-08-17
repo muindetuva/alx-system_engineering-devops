@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Install nginx and and make it return a page with a string 'Holberton School'
 
-apt-get install -y nginx
+apt-get -y update
+apt-get -y install nginx
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
 nginx -s reload
