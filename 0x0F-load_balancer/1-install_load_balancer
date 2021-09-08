@@ -17,6 +17,7 @@ backend myservers
     server 182-web-01 34.75.214.109 check
     server 182-web-02 35.190.185.74 check
     option httpchk
+    option httpclose
 " >> sudo /etc/haproxy/haproxy.cfg
 
 sudo systemctl restart haproxy
