@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
-# install and setup haproxy on a new Ubuntu machine
+# Install and configure HAProxy
 
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install -y haproxy
 
-echo "ENABLED=1" >> /etc/default/haproxy
+sudo echo "ENABLED=1" >> sudo /etc/default/haproxy
 
-echo "
-    listen load_balancer
+sudo echo "
+frontend hbnbclone
     bind *:80
-    mode http
-    balance roundrobin
-    option httpclose
     option forwardfor
-    server 182-web-01 35.196.21.97 check
-    server 182-web-02 34.139.18.218 check
-    option httpchk
-" >> /etc/haproxy/haproxy.cfg
+    default_backend myservers
 
-sudo service haproxy start
+backend myservers
+    balance roundrobin
+    server 182-web-01 34.75.214.109 check
+    server 182-web-02 35.190.185.74 check
+    option httpchk
+" >> sudo /etc/haproxy/haproxy.cfg
+
+sudo systemctl restart haproxy
