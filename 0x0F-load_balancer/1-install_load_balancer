@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Install and configure HAProxy
+
+sudo apt-get update -y
+
+sudo apt-get install --no-install-recommends software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-2.0
+sudo apt-get update -y
+
+apt-get install haproxy=2.0.\*
+
+sudo echo "
+frontend hbnbclone
+    bind 0.0.0.0:80
+    option forwardfor
+    default_backend myservers
+
+backend myservers
+    balance roundrobin
+    server 182-web-01 34.75.214.109:80 check
+    server 182-web-02 35.190.185.74:80 check
+    option httpchk
+" >> /etc/haproxy/haproxy.cfg
+
+sudo systemctl restart haproxy
