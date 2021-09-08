@@ -4,12 +4,12 @@
 sudo apt-get update -y
 
 sudo apt-get install --no-install-recommends software-properties-common
-sudo add-apt-repository ppa:vbernat/haproxy-2.0
+#sudo add-apt-repository ppa:vbernat/haproxy-2.0
 sudo apt-get update -y
 
 sudo apt-get install haproxy=2.0.\*
 
-sudo echo "ENABLED=1" >> /etc/default/haproxy
+sudo echo "ENABLED=1" >> sudo /etc/default/haproxy
 
 sudo echo "
 frontend hbnbclone
@@ -22,6 +22,6 @@ backend myservers
     server 182-web-01 34.75.214.109 
     server 182-web-02 35.190.185.74
     option httpchk
-" >> /etc/haproxy/haproxy.cfg
+" >> sudo /etc/haproxy/haproxy.cfg
 
 sudo systemctl restart haproxy
