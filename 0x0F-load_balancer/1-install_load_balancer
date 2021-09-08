@@ -4,10 +4,10 @@
 sudo apt-get update -y
 
 sudo apt-get install --no-install-recommends software-properties-common
-#sudo add-apt-repository ppa:vbernat/haproxy-2.0
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.0
 sudo apt-get update -y
 
-sudo apt-get install haproxy=2.0.\*
+sudo apt-get install -y haproxy=2.0.\*
 
 sudo echo "ENABLED=1" >> sudo /etc/default/haproxy
 
