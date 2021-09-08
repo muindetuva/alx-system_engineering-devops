@@ -9,6 +9,8 @@ sudo apt-get update -y
 
 apt-get install haproxy=2.0.\*
 
+sudo echo "ENABLED=1" >> /etc/default/haproxy
+
 sudo echo "
 frontend hbnbclone
     bind *:80
