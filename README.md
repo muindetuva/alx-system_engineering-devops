@@ -95,7 +95,7 @@ Covering how to write and run bash scripts.
 > * How to create an SSH RSA key pair
 > * How to connect to a remote host using an SSH RSA key pair
 
-## 0x0C-web_server
+### 0x0C-web_server
 > Learning about web servers
 > Concepts covered:
 > * What is the main role of a web server
@@ -103,5 +103,10 @@ Covering how to write and run bash scripts.
 > * Why web servers usually have a parent process and child processes
 > * What are the main HTTP requests
 
-## 0x0D-web_stack_debugging_0
+### 0x0D-web_stack_debugging_0
 > Learning about webstack debugging
+
+### 0x0F-load_balancer
+> Learning about load balancers and actually setting up a load balancer
+
+
