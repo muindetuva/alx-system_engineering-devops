@@ -115,3 +115,7 @@ Covering how to write and run bash scripts.
 > * What is HTTPS SSL 2 main roles
 > * What is the purpose encrypting traffic
 > * What SSL termination means
+
+### 0x13-firewall
+> Learn about firewalls
+> Install UFW on my servers
