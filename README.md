@@ -119,3 +119,12 @@ Covering how to write and run bash scripts.
 ### 0x13-firewall
 > Learn about firewalls
 > Install UFW on my servers
+
+### 0x14-mysql
+> Learning about database infrastructures
+> Concepts covered:
+> * What is the main role of a database
+> * What is a database replica
+> * What is the purpose of a database replica
+> * Why database backups need to be stored in different physical locations
+> * What operation should you regularly perform to make sure that your database backup strategy actually works
