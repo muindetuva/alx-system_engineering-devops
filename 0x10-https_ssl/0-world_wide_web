@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# A script that looks up DNS records of a passed domain
 lookup (){
     dig +noall +answer "$1" | 
         awk '
