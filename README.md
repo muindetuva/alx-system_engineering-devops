@@ -109,4 +109,9 @@ Covering how to write and run bash scripts.
 ### 0x0F-load_balancer
 > Learning about load balancers and actually setting up a load balancer
 
-
+### 0x10-https_ssl
+> Learn about SSL termination and setting up SSL termination
+> Concepts covered:
+> * What is HTTPS SSL 2 main roles
+> * What is the purpose encrypting traffic
+> * What SSL termination means
