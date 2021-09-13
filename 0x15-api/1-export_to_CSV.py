@@ -3,9 +3,9 @@
 Module contains python script for making an api call and writing response to
 csv file
 '''
+import csv
 import requests
 import sys
-import csv
 
 
 if __name__ == '__main__':
