@@ -3,7 +3,6 @@
 Module contains python script for making an api call and writing response to
 csv file
 '''
-import csv
 import json
 import requests
 import sys
@@ -31,4 +30,4 @@ if __name__ == '__main__':
     file_name = '{}.json'.format(user.get('id'))
 
     with open(file_name, mode='w') as outfile:
-        json.dump(todo_dict, outfile)
+        json.dump(collections.OrderedDict(todo_dict), outfile)
