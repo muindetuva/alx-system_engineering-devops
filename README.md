@@ -128,3 +128,11 @@ Covering how to write and run bash scripts.
 > * What is the purpose of a database replica
 > * Why database backups need to be stored in different physical locations
 > * What operation should you regularly perform to make sure that your database backup strategy actually works
+
+### 0x15-api
+> Learning about apis and microservices
+> Concepts covered:
+> * What is an API
+> * What is a REST API
+> * What are microservices
+> * What is the CSV format
