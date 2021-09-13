@@ -22,7 +22,6 @@ if __name__ == '__main__':
         new_dict['task'] = todo.get('title')
         new_dict['completed'] = todo.get('completed')
         new_dict['username'] = user.get('username')
-        new_dict['userId'] = user.get('id')
         todo_list.append(new_dict)
 
     todo_dict = {user.get('id'): todo_list}
