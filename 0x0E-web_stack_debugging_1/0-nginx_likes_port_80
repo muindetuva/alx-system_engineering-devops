@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script to fix my nginx server
+
+string1="8080"
+new_string1="80"
+
+sed -i "s/$string1/$new_string1/g" /etc/nginx/sites-enabled/default
+sudo service nginx restart
