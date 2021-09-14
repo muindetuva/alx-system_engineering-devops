@@ -5,5 +5,5 @@ string1="8080"
 new_string1="80"
 
 sed -i "s/$string1/$new_string1/g" /etc/nginx/sites-enabled/default
-rm /var/run/nginx.pid
 sudo service nginx restart
+rm /var/run/nginx.pid
