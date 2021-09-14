@@ -104,7 +104,10 @@ Covering how to write and run bash scripts.
 > * What are the main HTTP requests
 
 ### 0x0D-web_stack_debugging_0
-> Learning about webstack debugging
+> Learning about webstack debugging and debugging servers
+
+### 0x0E-web_stack_debugging_1
+> Learning about webstack debugging and debugging servers
 
 ### 0x0F-load_balancer
 > Learning about load balancers and actually setting up a load balancer
@@ -115,6 +118,9 @@ Covering how to write and run bash scripts.
 > * What is HTTPS SSL 2 main roles
 > * What is the purpose encrypting traffic
 > * What SSL termination means
+
+### 0x12-web_stack_debugging_2
+> Learning about webstack debugging and debugging servers
 
 ### 0x13-firewall
 > Learn about firewalls
