@@ -142,3 +142,12 @@ Covering how to write and run bash scripts.
 > * What is a REST API
 > * What are microservices
 > * What is the CSV format
+
+### 0x16-api_advanced
+> Learning how to use APIs
+> Concepts covered:
+> * How to read API documentation to find the endpoints you’re looking for
+> * How to use an API with pagination
+> * How to parse JSON results from an API
+> * How to make a recursive API call
+> * How to sort a dictionary by value
