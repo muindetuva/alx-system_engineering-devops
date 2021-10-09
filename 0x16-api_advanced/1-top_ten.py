@@ -12,9 +12,9 @@ def top_ten(subreddit):
         subreddit(str) - The name of the subreddit to check
     '''
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
+
     data = requests.get(url, headers={'User-agent': 'my-bot'},
-                        params={'limit': 10})
-    post_list = data.json().get('data').get
+                        params={'limit': 10}, allow_redirects=False)
     if data.status_code == 200:
         post_list = data.json().get('data').get('children')
         count = 0
@@ -24,4 +24,4 @@ def top_ten(subreddit):
             print(post.get("data").get("title"))
             count = count + 1
     else:
-        return None
+        print("None")
