@@ -159,3 +159,6 @@ Covering how to write and run bash scripts.
 > * What are the 2 main area of monitoring
 > * What are access logs for a web server (such as Nginx)
 > * What are error logs for a web server (such as Nginx)
+
+### 0x1A-application_server
+> Learning about application servers and setting up one for the AirBnb clone
