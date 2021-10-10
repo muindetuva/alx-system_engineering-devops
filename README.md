@@ -151,3 +151,11 @@ Covering how to write and run bash scripts.
 > * How to parse JSON results from an API
 > * How to make a recursive API call
 > * How to sort a dictionary by value
+
+### 0x18-webstack_monitoring
+> Learning about monitoring
+> Concepts covered:
+> * Why is monitoring needed
+> * What are the 2 main area of monitoring
+> * What are access logs for a web server (such as Nginx)
+> * What are error logs for a web server (such as Nginx)
