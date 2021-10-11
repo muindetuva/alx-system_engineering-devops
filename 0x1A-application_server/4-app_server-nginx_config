@@ -1,0 +1,25 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        server_name 34.75.214.109;
+
+        location /hbnb_static {
+            alias /data/web_static/current/;
+        }
+
+        # Custom header
+        add_header X-Served-By gc-182-web-01-1628836787;
+
+        location /airbnb-onepage/ {
+                proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+        }
+
+        location ~* /airbnb-dynamic/number_odd_or_even/(.*) {
+                proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+        }
+
+        location /api/ {
+                proxy_pass http://127.0.0.1:5002;
+        }
+}
