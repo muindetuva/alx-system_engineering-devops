@@ -71,6 +71,10 @@ Covering how to write and run bash scripts.
 > * What is /etc/hosts
 > * How to display your machine’s active network interfaces
 
+### containerizing_fastapi
+> Production-shaped Docker packaging for FastAPI with Gunicorn workers,
+> environment configuration, multi-stage builds, and host networking.
+
 ### 0x09-web_infrastructure_design
 > Learning about web infrastructure
 > Concepts covered:
