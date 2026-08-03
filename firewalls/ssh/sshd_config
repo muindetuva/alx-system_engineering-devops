@@ -1,0 +1,8 @@
+# Require public-key authentication for every SSH user.
+PasswordAuthentication no
+
+# Administrators log in as an unprivileged account and elevate with sudo.
+PermitRootLogin no
+
+# Moving SSH off port 22 reduces scanner noise but is security through obscurity.
+# It never substitutes for key-based authentication or disabling root login.
