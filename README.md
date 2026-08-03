@@ -75,6 +75,10 @@ Covering how to write and run bash scripts.
 > Production-shaped Docker packaging for FastAPI with Gunicorn workers,
 > environment configuration, multi-stage builds, and host networking.
 
+### cicd_workflows
+> Parallel GitHub Actions lint, test, image build, registry publication, and
+> approval-gated deployment for a two-service FastAPI cluster.
+
 ### 0x09-web_infrastructure_design
 > Learning about web infrastructure
 > Concepts covered:
