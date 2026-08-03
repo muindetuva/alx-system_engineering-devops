@@ -1,0 +1,6 @@
+Upstream target: https://github.com/alex/what-happens-when
+
+No pull-request URL is recorded. Creating a third-party pull request changes an
+external project and requires explicit authorization plus a meaningful,
+reviewed contribution. This curriculum implementation intentionally does not
+fabricate a PR URL or submit an unauthorized change upstream.

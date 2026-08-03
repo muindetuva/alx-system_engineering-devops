@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="920"
+     viewBox="0 0 1200 920" role="img"
+     aria-labelledby="title description">
+  <title id="title">HTTPS request flow from a browser to a database</title>
+  <desc id="description">
+    A browser resolves a host through DNS, creates an encrypted connection to
+    port 443 through a firewall, and sends the request through a load balancer,
+    web server, application server, and database before the response returns.
+  </desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10"
+            refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .box { fill: #eff6ff; stroke: #1d4ed8; stroke-width: 2; rx: 14; }
+      .edge { fill: #fff7ed; stroke: #c2410c; stroke-width: 2; rx: 14; }
+      .data { fill: #f0fdf4; stroke: #15803d; stroke-width: 2; rx: 14; }
+      .title { font: 700 28px sans-serif; fill: #0f172a; }
+      .label { font: 700 18px sans-serif; fill: #0f172a; }
+      .detail { font: 14px sans-serif; fill: #334155; }
+      .line { stroke: #2563eb; stroke-width: 3; marker-end: url(#arrow); }
+      .return { stroke: #0f766e; stroke-width: 2; stroke-dasharray: 8 6; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="920" fill="#f8fafc"/>
+  <text x="600" y="44" text-anchor="middle" class="title">
+    What Happens After Enter Is Pressed?
+  </text>
+
+  <rect class="box" x="60" y="90" width="220" height="100"/>
+  <text x="170" y="125" text-anchor="middle" class="label">Browser / Client</text>
+  <text x="170" y="151" text-anchor="middle" class="detail">https://www.google.com</text>
+  <text x="170" y="174" text-anchor="middle" class="detail">Source IP + ephemeral port</text>
+
+  <rect class="box" x="370" y="90" width="220" height="100"/>
+  <text x="480" y="125" text-anchor="middle" class="label">DNS Resolver</text>
+  <text x="480" y="151" text-anchor="middle" class="detail">Hostname → server IP</text>
+  <text x="480" y="174" text-anchor="middle" class="detail">Cached or authoritative answer</text>
+
+  <line class="line" x1="280" y1="130" x2="360" y2="130"/>
+  <line class="line" x1="370" y1="166" x2="290" y2="166"/>
+  <text x="325" y="115" text-anchor="middle" class="detail">DNS query</text>
+  <text x="330" y="188" text-anchor="middle" class="detail">IP answer</text>
+
+  <rect class="edge" x="60" y="250" width="220" height="110"/>
+  <text x="170" y="286" text-anchor="middle" class="label">Firewall / WAF</text>
+  <text x="170" y="312" text-anchor="middle" class="detail">Allows destination TCP 443</text>
+  <text x="170" y="336" text-anchor="middle" class="detail">Rejects disallowed traffic</text>
+
+  <line class="line" x1="170" y1="190" x2="170" y2="240"/>
+  <text x="190" y="221" class="detail">TCP handshake to server IP:443</text>
+
+  <rect class="edge" x="370" y="250" width="250" height="110"/>
+  <text x="495" y="286" text-anchor="middle" class="label">TLS / HTTPS</text>
+  <text x="495" y="312" text-anchor="middle" class="detail">Certificate + key agreement</text>
+  <text x="495" y="336" text-anchor="middle" class="detail">Encrypted HTTP request</text>
+
+  <line class="line" x1="280" y1="305" x2="360" y2="305"/>
+
+  <rect class="box" x="730" y="250" width="250" height="110"/>
+  <text x="855" y="286" text-anchor="middle" class="label">Load Balancer</text>
+  <text x="855" y="312" text-anchor="middle" class="detail">TLS endpoint or pass-through</text>
+  <text x="855" y="336" text-anchor="middle" class="detail">Selects a healthy backend</text>
+
+  <line class="line" x1="620" y1="305" x2="720" y2="305"/>
+
+  <rect class="box" x="730" y="430" width="250" height="100"/>
+  <text x="855" y="467" text-anchor="middle" class="label">Web Server</text>
+  <text x="855" y="493" text-anchor="middle" class="detail">HTTP, static files, reverse proxy</text>
+  <text x="855" y="516" text-anchor="middle" class="detail">Example: Nginx</text>
+
+  <line class="line" x1="855" y1="360" x2="855" y2="420"/>
+
+  <rect class="box" x="440" y="610" width="290" height="100"/>
+  <text x="585" y="647" text-anchor="middle" class="label">Application Server</text>
+  <text x="585" y="673" text-anchor="middle" class="detail">Authentication + business logic</text>
+  <text x="585" y="696" text-anchor="middle" class="detail">Builds the dynamic response</text>
+
+  <line class="line" x1="805" y1="530" x2="650" y2="602"/>
+
+  <rect class="data" x="60" y="610" width="250" height="100"/>
+  <text x="185" y="647" text-anchor="middle" class="label">Database</text>
+  <text x="185" y="673" text-anchor="middle" class="detail">Queries indexed persistent data</text>
+  <text x="185" y="696" text-anchor="middle" class="detail">Returns rows / transaction result</text>
+
+  <line class="line" x1="440" y1="660" x2="320" y2="660"/>
+  <line class="line" x1="185" y1="710" x2="185" y2="770"/>
+
+  <path class="return" d="M185 770 H1050 V140 H610" fill="none"/>
+  <path d="M610,134 L598,140 L610,146 Z" fill="#0f766e"/>
+  <text x="600" y="810" text-anchor="middle" class="label" fill="#0f766e">
+    Response returns: database → app → web → load balancer → encrypted TLS → browser
+  </text>
+
+  <text x="600" y="862" text-anchor="middle" class="detail">
+    DNS identifies the destination; TCP/IP transports bytes; TLS protects them;
+  </text>
+  <text x="600" y="886" text-anchor="middle" class="detail">
+    each server layer handles a distinct part of delivering the final page.
+  </text>
+</svg>
