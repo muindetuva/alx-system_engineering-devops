@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn service for auth-service FastAPI application
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/opt/auth-service
+EnvironmentFile=/opt/auth-service/.env
+ExecStart=/opt/auth-service/.venv/bin/gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
